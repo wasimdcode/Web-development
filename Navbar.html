@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        ul
+        {
+            list-style: none;
+            display: inline-block;
+            margin: 0%;
+            padding: 0%;
+            background-color:rgb(202, 10, 219);
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px palevioletred;
+
+        }
+        li
+        {
+            float: left;
+        }
+        li a
+        {
+            color: white;
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+            
+        }
+        .content
+        {
+            background-color: rgb(15, 158, 146);
+            position: absolute;
+            display: none;
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+    
+            
+        }
+        .content a
+        {
+            display: block;
+            padding: 23px;
+            text-align: center;
+            
+        }
+        .dropdown:hover .content
+        {
+            display: block;
+        }
+        li a:hover 
+        {
+            
+            color: black;
+            background-color: bisque;
+            border-radius: 100px;
+            box-shadow: 0px 0px 100px grey;
+    
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Gallery</a></li>
+        <li class="dropdown">
+            <a href="">Courses</a>
+            <div class="content">
+                <a href="">MDCE</a>
+                <a href="">ADCE</a>
+                <a href="">DCAP</a>
+                <a href="">DM</a>
+            </div>
+        </li>
+        <li><a href="">Call</a></li>
+    </ul>
+</body>
+</html>
